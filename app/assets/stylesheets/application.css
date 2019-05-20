@@ -1,0 +1,42 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #fff;
+	color: #333;
+}
+
+.all{
+	padding: 30px;
+}
+
+.box{
+	margin-top: 20px;
+}
+
+.item{
+	font-weight: bolder;
+	border-spacing: 20px;
+	font-weight: normal;
+	text-align: center;
+	color: black;
+}
+
+.main{
+	border-spacing: 20px;
+	font-weight: normal;
+	text-align: center;
+}
+
+.top-box{
+	padding-left: 60px;
+	line-height: 60px;
+	font-size: 20px;
+}
+
+.report{
+	color: red;
+}

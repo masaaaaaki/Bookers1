@@ -1,0 +1,42 @@
+<div class="all">
+
+	<h1>Books</h1>
+	<table class="item">
+
+		<td><b>Title</b></td>
+		<td><b>Body</b></td>
+
+
+		<% @blogs.each do |blog| %>
+			<tr>
+				<td><%= blog.title %></td>
+				<td><%= blog.body %></td>
+				<td><%= link_to "Show", blog_path(blog), class: "show" %></td>
+				<td><%= link_to "Edit", edit_blog_path(blog), class: "edit" %></td>
+				<td><%= link_to "Destroy", blog_path(blog), class: "destroy", method: :delete, data: {confirm: "本当に削除しますか"} %></td>
+			</tr>
+		<% end %>
+	</table>
+
+
+	<h2>New book</h2>
+
+	<%= form_for(@blog) do |f| %>
+
+		<div class="box">
+			<h4>Title</h4>
+			<%= f.text_field :title, class: "book_title" %>
+		</div>
+
+		<div class="box">
+			<h4>Body</h4>
+			<%= f.text_area :body, class: "book_body"%>
+		</div>
+
+		<br><%= f.submit "Create book" %><br>
+
+	<% end %>
+</div>
+
+
+

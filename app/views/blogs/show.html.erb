@@ -1,0 +1,17 @@
+<div class="all">
+	<div class="report">
+		<p id="notice">
+		<%= notice %>
+	</p>
+	</div>
+
+	<div class="top-box">
+		<h4>Title:</h4>
+		<%= @blog.title %>
+		<h4>Body:</h4>
+		<%= @blog.body %>
+	</div>
+
+	<%= link_to "Edit", edit_blog_path(@blog), class: "edit" %>
+	<%= link_to "Back", blogs_path , class: "back"%>
+</div>
